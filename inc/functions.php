@@ -16,7 +16,7 @@ function init() {
 		'options'    => (object) array(
 			'mail_to'      => get_option( 'admin_email' ),
 			'mail_from'    => get_option( 'admin_email' ),
-			'mail_subject' => 'Failed Login [' . get_option( 'name' ) . ']',
+			'mail_subject' => 'Failed Login [' . get_option( 'siteurl' ) . ']',
 		)
 	);
 	$autoloader = init_autoloader( $data->plugin_dir . '/lib' );
