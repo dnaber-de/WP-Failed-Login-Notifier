@@ -27,9 +27,10 @@ class LogFailedLogins {
 	public function logFailedLogin( $user_name ) {
 
 		$context = array(
-			'IP'    => $_SERVER[ 'REMOTE_ADDR' ],
-			'user'  => $user_name,
-			'whois' => 'http://ip-lookup.net/?' . $_SERVER[ 'REMOTE_ADDR' ]
+			'IP'      => $_SERVER[ 'REMOTE_ADDR' ],
+			'user'    => $user_name,
+			'whois'   => 'http://ip-lookup.net/?' . $_SERVER[ 'REMOTE_ADDR' ],
+			'request' => $_SERVER[ 'REQUEST_URI' ]
 		);
 		$this->logger->warning( 'Failed Login', $context );
 

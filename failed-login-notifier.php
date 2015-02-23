@@ -4,7 +4,7 @@
  * Plugin Name: Failed Login Notifier
  * Author: David Naber
  * Author URI: http://dnaber.de/
- * Version: 2014.11.14
+ * Version: 2015.02.23
  */
 namespace FailedLoginNotifier;
 
